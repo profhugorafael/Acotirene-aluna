@@ -1,19 +1,16 @@
 package entities;
 
 public class Player {
-  
+
   // atributos
   private String name;
   private int score;
 
   // construtor 
-  public Player(String name, int score) {
+  public Player(String name) {
     this.name = name;
-    this.score = score;
+    this.score = 0;
   }  
-
-  public Player(){
-  }
 
   // getters and setters
   public String getName(){
@@ -24,12 +21,18 @@ public class Player {
     return score;
   }
 
-  // métodos
-  public void marcaPonto(){
-    System.out.println("entrando na marca ponto");
-    score++; // soma 1 na variável score
-    System.out.println("saindo da marca ponto");
+  public void setScore(int score) {
+    this.score = score;
   }
 
+  // métodos
+  public void win(){
+    score++;
+  }
+
+  @Override
+  public String toString() {
+    return "Player [name=" + name + ", score=" + score + "]";
+  }
 
 }
