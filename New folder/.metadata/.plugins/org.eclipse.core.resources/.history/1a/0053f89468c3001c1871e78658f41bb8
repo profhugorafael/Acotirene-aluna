@@ -1,0 +1,5 @@
+package com.example.model.entities;
+
+public class Developer extends User {
+
+}

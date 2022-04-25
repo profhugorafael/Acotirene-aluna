@@ -1,0 +1,9 @@
+package com.example.model.entities;
+
+public class User extends Player {
+	  
+
+
+	}
+
+}

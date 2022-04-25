@@ -1,16 +1,7 @@
 package entities;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import services.Match;
-
-public class User {
+public class User extends Player {
   
-  private List<Match> matchmakes;
 
-  public User(){
-    matchmakes = new ArrayList<>();
-  }
 
 }
